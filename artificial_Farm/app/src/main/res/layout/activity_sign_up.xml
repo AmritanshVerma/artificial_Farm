@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+    android:scaleType="fitXY"
+    android:weightSum="100"
+    tools:context="com.example.laviverma.intellifarm.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15.7"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="84.3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/tName"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:padding="5dp"
+                android:background="@drawable/only_brder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tName" />
+
+            <TextView
+                android:id="@+id/tPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etName"
+                android:text="Phone Number" />
+
+            <EditText
+                android:padding="5dp"
+                android:background="@drawable/only_brder"
+                android:layout_width="300dp"
+                android:id="@+id/etPhone"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tPhone" />
+
+            <TextView
+                android:id="@+id/tEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPhone"
+                android:text="Email address" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:padding="5dp"
+                android:layout_below="@+id/tEmail"
+                android:background="@drawable/only_brder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tPass"
+                android:layout_below="@id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etPass"
+                android:padding="5dp"
+                android:layout_below="@+id/tPass"
+                android:background="@drawable/only_brder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tconfPass"
+                android:layout_below="@+id/etPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password" />
+
+            <EditText
+                android:layout_below="@+id/tconfPass"
+                android:id="@+id/etconfPass"
+                android:padding="5dp"
+                android:background="@drawable/only_brder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_border"
+                android:padding="10dp"
+                android:text="Create account" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

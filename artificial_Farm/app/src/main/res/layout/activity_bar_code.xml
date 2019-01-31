@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.laviverma.intellifarm.AddPolyHouse">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/result"
+        android:layout_toEndOf="@+id/result"
+        android:layout_toRightOf="@+id/result"
+        android:background="#00000000"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <SurfaceView
+        android:id="@+id/cameraView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+       android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add the system to your device"
+        android:textColor="#104D26"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="SCAN YOUR QR CODE"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sysName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sysname"
+        android:layout_centerHorizontal="true"
+        android:text="Enter the name for your system"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/sysname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/connect"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/black_border"
+        android:padding="10dp"
+        android:text="Connect" />
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:textSize="30sp"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

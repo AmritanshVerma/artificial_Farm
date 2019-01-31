@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.laviverma.intellifarm.Fertigation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/progress1"
+        android:text="Temp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/nutrient"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progress3"
+        android:layout_alignLeft="@+id/co2"
+        android:layout_alignStart="@+id/co2" />
+
+    <TextView
+        android:id="@+id/water_level"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/progress1" />
+
+    <TextView
+        android:id="@+id/co2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progress3"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:text="EC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text="pH"
+        android:id="@+id/textView2" />
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="100dp"
+        android:layout_above="@+id/progress2"
+        android:layout_weight="14.50"
+        android:progress="10"
+        android:progressDrawable="@drawable/custom_progress" />
+    <ProgressBar
+        android:id="@+id/progress2"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="100dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="14.50"
+        android:progress="50"
+        android:progressDrawable="@drawable/custom_progress" />
+    <ProgressBar
+        android:id="@+id/progress3"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/progress2"
+        android:layout_weight="14.50"
+        android:layout_marginRight="150dp"
+        android:progress="90"
+        android:progressDrawable="@drawable/custom_progress" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IntelliFarm</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="str">CO₂</string>
+    <string name="multi_text">
+ <![CDATA[ <font color=#ffffff>New User?<font color=#039BEC>Sign Up Now
+
+]]>
+  </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

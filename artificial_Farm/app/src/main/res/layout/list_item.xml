@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#bbf771"
+    >
+    <ImageView
+        android:id="@+id/poly_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/polyhouse_colored"
+        android:layout_marginRight="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/poly_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/poly_image"
+        android:layout_toRightOf="@+id/poly_image"
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        tools:text="hellom" />
+
+
+
+</RelativeLayout>
